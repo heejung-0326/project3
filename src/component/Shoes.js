@@ -18,6 +18,7 @@ const TabList = ({click, setClick}) => (
       </li>
     ))}
   </ul>
+
 );
 
 const Shoes = () =>{
