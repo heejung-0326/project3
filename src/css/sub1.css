@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* 컬러 */
+  --txt-color:#222;
+  --white-color:#fff;
+  --main-color1:#FF6B35;
+  --main-color2:#22304E;
+  --tag-bg:#F3F4F5;
+  /* 텍스트 */
+  --txt-pc:16px;
+  --txt-tablet:0.875rem;
+  --txt-mobile:0.75rem;
+  /* 박스 그림자 */
+  --shadow1:2px 1px 2px 0px rgba(0, 0, 0, 0.32);
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.clothing-video,
+.beauty-video,
+.shoes-video {
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.clothing-video h2,
+.beauty-video h2,
+.shoes-video h2 {
+  display: none;
+}
+.clothing-video video,
+.beauty-video video,
+.shoes-video video {
+  width: 100%;
+}
+
+.top-content h2,
+.bottom-content h2,
+.outer-content h2,
+.perfume-content h2,
+.skincare-content h2,
+.haircare-content h2,
+.sneakers-content h2,
+.sandals-content h2,
+.boots-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0px;
+}
+.top-content ul,
+.bottom-content ul,
+.outer-content ul,
+.perfume-content ul,
+.skincare-content ul,
+.haircare-content ul,
+.sneakers-content ul,
+.sandals-content ul,
+.boots-content ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.tag_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tag {
+  width: 100px;
+  text-align: center;
+  border: 1px solid var(--txt-color);
+  border-radius: 20px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 50px;
+}
+.tag:hover {
+  background-color: var(--tag-bg);
+}
+.tag.active {
+  background-color: var(--main-color2);
+  color: var(--white-color);
+}
+
+.clothing-image,
+.beauty-image,
+.shoes-image {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.clothing-image .left-image,
+.beauty-image .left-image,
+.shoes-image .left-image {
+  flex-shrink: 0;
+}
+.clothing-image .left-image img,
+.beauty-image .left-image img,
+.shoes-image .left-image img {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.clothing-image .right-image,
+.beauty-image .right-image,
+.shoes-image .right-image {
+  flex-grow: 1;
+  position: relative;
+  width: 650px;
+}
+.clothing-image .right-image .more-btn,
+.beauty-image .right-image .more-btn,
+.shoes-image .right-image .more-btn {
+  position: absolute;
+  right: 30px;
+  top: -40px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--txt-color);
+}
+.clothing-image .right-image .more-btn svg,
+.beauty-image .right-image .more-btn svg,
+.shoes-image .right-image .more-btn svg {
+  vertical-align: middle;
+}
+.clothing-image .right-image ul,
+.beauty-image .right-image ul,
+.shoes-image .right-image ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.clothing-image .right-image ul li,
+.beauty-image .right-image ul li,
+.shoes-image .right-image ul li {
+  width: 200px;
+  height: 280px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+.clothing-image .right-image ul li div,
+.beauty-image .right-image ul li div,
+.shoes-image .right-image ul li div {
+  width: 200px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.clothing-image .right-image ul li div img,
+.beauty-image .right-image ul li div img,
+.shoes-image .right-image ul li div img {
+  width: 200px;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+.clothing-image .right-image ul li div img:hover,
+.beauty-image .right-image ul li div img:hover,
+.shoes-image .right-image ul li div img:hover {
+  transform: scale(1.05);
+}
+.clothing-image .right-image ul li .price,
+.beauty-image .right-image ul li .price,
+.shoes-image .right-image ul li .price {
+  font-weight: bold;
+}
+.clothing-image .right-image ul li p,
+.beauty-image .right-image ul li p,
+.shoes-image .right-image ul li p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 4px 0;
+}
+.clothing-image .right-image ul li p:nth-of-type(2),
+.clothing-image .right-image ul li p:last-of-type,
+.beauty-image .right-image ul li p:nth-of-type(2),
+.beauty-image .right-image ul li p:last-of-type,
+.shoes-image .right-image ul li p:nth-of-type(2),
+.shoes-image .right-image ul li p:last-of-type {
+  text-align: right;
+}
+.clothing-image .right-image ul li svg,
+.beauty-image .right-image ul li svg,
+.shoes-image .right-image ul li svg {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .clothing-video,
+  .beauty-video,
+  .shoes-video {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .tag_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .clothing-image,
+  .beauty-image,
+  .shoes-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+  .left-image {
+    width: 40vw;
+  }
+  .right-image {
+    width: 60vw;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .top-content h2,
+  .bottom-content h2,
+  .outer-content h2,
+  .perfume-content h2,
+  .skincare-content h2,
+  .haircare-content h2,
+  .sneakers-content h2,
+  .sandals-content h2,
+  .boots-content h2 {
+    margin: 50px 0px;
+  }
+  .clothing-video,
+  .beauty-video,
+  .shoes-video {
+    width: 100%;
+    overflow: hidden;
+  }
+  .clothing-video video,
+  .beauty-video video,
+  .shoes-video video {
+    transform: scale(1.2) translateX(0px);
+  }
+  .tag_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .tag_box .tag {
+    font-size: var(--txt-mobile);
+    padding: 6px 0px;
+    margin-left: 10px;
+  }
+  .clothing-image,
+  .beauty-image,
+  .shoes-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 96vw;
+  }
+  .clothing-image .left-image,
+  .beauty-image .left-image,
+  .shoes-image .left-image {
+    text-align: center;
+  }
+  .clothing-image .left-image img,
+  .beauty-image .left-image img,
+  .shoes-image .left-image img {
+    width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .more-btn {
+    display: none;
+  }
+  .right-image {
+    width: auto !important;
+  }
+  .right-image ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .right-image ul li {
+    text-align: center;
+    width: 48.4% !important;
+    padding: 0 !important;
+  }
+  .right-image ul li p {
+    width: 160px;
+    font-size: var(--txt-mobile);
+  }
+  .right-image ul li a {
+    display: block;
+    width: 100%;
+  }
+  .right-image ul li a div {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .right-image ul li a div img {
+    width: 170px !important;
+    height: 170px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=sub1.css.map */

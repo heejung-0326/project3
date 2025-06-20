@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* Noto sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* 컬러 */
+  --txt-color:#222;
+  --white-color:#fff;
+  --main-color1:#FF6B35;
+  --main-color2:#22304E;
+  --tag-bg:#F3F4F5;
+  /* 텍스트 */
+  --txt-pc:16px;
+  --txt-tablet:0.875rem;
+  --txt-mobile:0.75rem;
+  --fontsize-24:1.5rem;
+  --fontsize-20:1.25rem;
+  --fontsize-16:1rem;
+  --fontsize-14:0.875rem;
+  --fontsize-12:0.75rem;
+  /* 박스 그림자 */
+  --shadow1:2px 1px 2px 0px rgba(0, 0, 0, 0.32);
+}
+
+body {
+  font-family: "Noto Sans", "Pretendard", "sans-serif";
+  color: #222;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+li, ul, ol {
+  list-style: none;
+}
+
+/* 텍스트 공통서식 */
+.input-group {
+  position: relative;
+  z-index: 10;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  outline: none;
+}
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: var(--txt-color);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.input-group input:focus + label, .input-group input:valid + label {
+  top: -10px;
+  font-size: 14px;
+  color: var(--main-color2);
+}
+
+.input-group textarea {
+  width: 99%;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  background: none;
+  outline: none;
+  resize: vertical;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  text-align: right;
+  font-size: 12px;
+  color: #222;
+  margin-top: 10px;
+  bottom: 35px;
+  right: 20px;
+}
+
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--main-color2);
+}
+
+.write-form {
+  width: 1200px;
+  margin: 0 auto;
+}
+.write-form h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.write-form div {
+  width: 1000px;
+}
+.write-form div .upload {
+  margin: 100px 0px 100px 50px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.write-form div .upload li:nth-child(2) label {
+  position: relative;
+  right: 250px;
+}
+.write-form div .upload li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.write-form div .upload li img {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.write-form div .upload li div {
+  position: relative;
+  right: 8px;
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 90px);
+  gap: 15px;
+}
+.write-form div .upload li div .remove-btn {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.write-form div .upload li div .thumb {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.write-form div div {
+  width: 100%;
+  text-align: center;
+}
+.write-form .write {
+  width: 1000px;
+  margin: 0 auto;
+}
+.write-form .write p:nth-of-type(2) {
+  margin-left: 17px;
+}
+.write-form .write .write-select {
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+.write-form .write .status {
+  text-align: center;
+}
+.write-form .write .status-select {
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+.write-form .write .input-group, .write-form .write p, .write-form .write textarea {
+  margin-top: 30px;
+}
+.write-form .write .title {
+  color: var(--main-color2);
+  font-weight: bold;
+}
+.write-form .write .radio-group {
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.write-form .write .radio-group label {
+  margin-right: 50px;
+  cursor: pointer;
+}
+.write-form .cate-txt {
+  font-weight: bold;
+  color: var(--main-color2);
+  font-size: 16px;
+  padding: 5px 5px;
+  border: 1px solid var(--main-color2);
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transform: translateX(50px);
+}
+.write-form .product-label {
+  font-weight: bold;
+  color: var(--main-color2);
+}
+.write-form .price-status {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.write-form .price-status .price, .write-form .price-status .status {
+  width: 40%;
+}
+.write-form .title.status {
+  min-width: 60px;
+  margin: 0px -160px 0px -60px;
+}
+.write-form .write-btn {
+  width: 80%;
+  border: none;
+  color: var(--white-color);
+  background-color: var(--main-color2);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 20px 0px 20px 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .write-form {
+    width: 90%;
+  }
+  .write-form div {
+    width: 100%;
+  }
+  .write-form div .upload li div {
+    grid-template-columns: repeat(4, 90px);
+    gap: 10px;
+    width: 100%;
+  }
+  .write-form .price-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .write-form .title.status {
+    margin: 0px -130px 0px -60px;
+  }
+  .write-form .write {
+    width: 100%;
+  }
+  .write-form .write .cate-title {
+    text-indent: 0;
+  }
+  .write-form .write p:nth-of-type(2) {
+    margin: 15px 0 0 0;
+  }
+  .write-form .write .write-select {
+    width: 100%;
+    text-align: left;
+  }
+  .write-form .write .write-select {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .write-form {
+    width: 80%;
+  }
+  .write-form div {
+    width: 100%;
+  }
+  .write-form .title {
+    color: var(--main-color2);
+    font-weight: bold;
+    text-align: left !important;
+  }
+  .write-form .upload {
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 7px 0px 7px !important;
+  }
+  .write-form .upload li:nth-child(2) label {
+    right: 20px !important;
+  }
+  .write-form .upload li {
+    width: 100%;
+  }
+  .write-form .upload li div {
+    margin-left: 40px;
+    grid-template-columns: repeat(3, 80px) !important;
+  }
+  .write-form .write {
+    width: 100%;
+  }
+  .write-form .write .cate-title {
+    text-indent: 0;
+  }
+  .write-form .write p:nth-of-type(2) {
+    margin: 10px 0 0 0;
+  }
+  .write-form .write .write-select {
+    width: 100%;
+    text-align: left;
+  }
+  .write-form .title.status {
+    min-width: 60px;
+    margin: 30px 0px 0px 0px;
+  }
+  .write-form .price-status {
+    flex-direction: column;
+  }
+  .write-form .price-status .status-label {
+    margin-left: -360px !important;
+  }
+  .write-form .price-status .price, .write-form .price-status .status {
+    width: 100%;
+    padding: 0 8px;
+  }
+  .write-form .price-status .write-btn {
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .write-form .price-status .input-group input,
+  .write-form .price-status .input-group textarea {
+    font-size: 14px;
+  }
+  .write-btn {
+    width: 90% !important;
+    margin: 10px 0 20px 20px !important;
+  }
+}/*# sourceMappingURL=write.css.map */
