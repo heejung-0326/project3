@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 25-06-16 10:49
+-- 생성 시간: 25-06-20 10:53
 -- 서버 버전: 10.4.32-MariaDB
 -- PHP 버전: 8.2.12
 
@@ -24,36 +24,36 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 테이블 구조 `cart`
+-- 테이블 구조 `rego_user`
 --
 
-CREATE TABLE `cart` (
+CREATE TABLE `rego_user` (
   `no` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `userid` varchar(50) NOT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `desc` text DEFAULT NULL,
-  `img` varchar(255) DEFAULT NULL,
-  `price` int(11) DEFAULT NULL,
-  `quantity` int(11) DEFAULT 1,
+  `userid` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `nickname` varchar(255) DEFAULT '',
+  `email` varchar(255) DEFAULT '',
   `datetime` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- 테이블의 덤프 데이터 `cart`
+-- 테이블의 덤프 데이터 `rego_user`
 --
 
-INSERT INTO `cart` (`no`, `userid`, `title`, `desc`, `img`, `price`, `quantity`, `datetime`) VALUES
-(11, '1', 'Dime', 'Classic Relaxed Denim Pants', '/images/sub2/sub2_clothing/clothing1.png', 223000, 1, '2025-06-16 08:39:56'),
-(12, '1', 'Red Wing', 'Red Wing 8D', '/images/sub2/sub2_shoes/shoes1.png', 150000, 1, '2025-06-16 08:42:40');
+INSERT INTO `rego_user` (`no`, `userid`, `password`, `nickname`, `email`, `datetime`) VALUES
+(1, '1234', '$2b$10$EGc4ZlvPOYbzJ2pCJvaQvukGHmWNDcUvcLGty3oJIpI4ISVomV5ve', '1234', 'test@naver.com', '2025-06-16 08:26:26'),
+(2, 'hee1', '$2b$10$nw7fx6Th4PcgrVvFT5U45urk8O0edpUSNNs.FWNkKnXDX2tM0wIC6', 'dd', 'test@naver.com', '2025-06-17 05:58:04'),
+(3, 'hee2', '$2b$10$Bl3tteALL65l1uNvn7EBKeahN03Eq1WA0PrDrVmyQtl6Jv.QGiWDS', 'ee', 'test@naver.com', '2025-06-17 06:57:44'),
+(4, 'hee3', '$2b$10$7ZCBwmqAwGL1B88zHGxbG.q1Yftdy4mTLYwlvPnwUHfnnok.q1392', 'ddd', 'test@naver.com', '2025-06-17 07:43:37');
 
 --
 -- 덤프된 테이블의 인덱스
 --
 
 --
--- 테이블의 인덱스 `cart`
+-- 테이블의 인덱스 `rego_user`
 --
-ALTER TABLE `cart`
+ALTER TABLE `rego_user`
   ADD PRIMARY KEY (`no`);
 
 --
@@ -61,10 +61,10 @@ ALTER TABLE `cart`
 --
 
 --
--- 테이블의 AUTO_INCREMENT `cart`
+-- 테이블의 AUTO_INCREMENT `rego_user`
 --
-ALTER TABLE `cart`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `rego_user`
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

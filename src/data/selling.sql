@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `selling` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `img` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
   `cate` varchar(255) NOT NULL,
