@@ -44,7 +44,7 @@ const BottomSub=({setCartCount}) => {
 
 
   const thumbnails = [
-    `${process.env.PUBLIC_URL}/images/sub2/sub2_clothing/clothing_pre1.png`,
+    `${process.env.PUBLIC_URL}/images/sub2/sub2_clothing/clothing_pre1.jpg`,
     `${process.env.PUBLIC_URL}/images/sub2/sub2_clothing/clothing_pre2.png`,
     `${process.env.PUBLIC_URL}/images/sub2/sub2_clothing/clothing_pre3.png`,
     `${process.env.PUBLIC_URL}/images/sub2/sub2_clothing/clothing_pre5.png`,
@@ -73,7 +73,7 @@ const BottomSub=({setCartCount}) => {
       return
     }
     try{
-      const res = await fetch('https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart', {
+      const res = await fetch('http://localhost:9070/cart', {
         method:'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -84,7 +84,7 @@ const BottomSub=({setCartCount}) => {
     if(res.ok){
       setIsModalOpen(true);
       try{
-      const updatedRes = await fetch(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart?userId=${userId}`);
+      const updatedRes = await fetch(`http://localhost:9070/cart?userId=${userId}`);
       const updatedCart = await updatedRes.json();
       setCartCount(updatedCart.length);
       window.dispatchEvent(new Event('cartChanged'));
@@ -107,7 +107,7 @@ const BottomSub=({setCartCount}) => {
     return;
     }
     try {
-      const res = await fetch('https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart', {
+      const res = await fetch('http://localhost:9070/cart', {
         method : 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
