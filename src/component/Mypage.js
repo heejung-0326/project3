@@ -27,7 +27,7 @@ function Mypage() {
       navigate('/login');
       return;
     }
-    axios.get(`http://localhost:9070/mypage/${userid}`)
+    axios.get(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/mypage/${userid}`)
       .then(res => {
         setSellingList(res.data);
         setSellingChecked(Array(res.data.length).fill(false));
@@ -116,7 +116,7 @@ const toDelete = currentList
 
 Promise.all(
   toDelete.map(id =>
-    axios.delete(`http://localhost:9070/selling/${id}`)
+    axios.delete(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/selling/${id}`)
   )
 )
   .then(() => {
