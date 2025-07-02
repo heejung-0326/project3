@@ -71,7 +71,7 @@ const userId = localStorage.getItem('userid') || '';
       return
     }
     try{
-      const res = await fetch('http://localhost:9070/cart', {
+      const res = await fetch('https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart', {
         method:'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -82,7 +82,7 @@ const userId = localStorage.getItem('userid') || '';
     if(res.ok){
       setIsModalOpen(true);
       try{
-      const updatedRes = await fetch(`http://localhost:9070/cart?userId=${userId}`);
+      const updatedRes = await fetch(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart?userId=${userId}`);
       const updatedCart = await updatedRes.json();
       setCartCount(updatedCart.length);
       window.dispatchEvent(new Event('cartChanged'));
@@ -105,7 +105,7 @@ const userId = localStorage.getItem('userid') || '';
     return;
     }
     try {
-      const res = await fetch('http://localhost:9070/cart', {
+      const res = await fetch('https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/cart', {
         method : 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
