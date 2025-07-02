@@ -50,7 +50,7 @@ function MobileFooter(props) {
           <li>통신판매업 신고번호 000-서울서초-0000</li>
           <li>주소서울특별시 강남구 역삼동 000-00</li>
           <li>전화 0000-0000</li>
-          <li>고객문의 <a href="mailto:chlghkqls123@naver.com">chlghkqls123@naver.com</a></li>
+          <li>고객문의 <a href="mailto:duqwlqdk@naver.com">duqwlqdk@naver.com</a></li>
         </ul>
     
           <ul className='info'>

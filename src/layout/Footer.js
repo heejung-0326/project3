@@ -53,7 +53,7 @@ function Footer(props) {
 
         <div className='f_info'>
           <p>주) 레디고 대표 000  사업자번호 000-00-0000통신판매업 신고번호 000-서울서초-0000</p>
-          <p>주소서울특별시 강남구 역삼동 000-00 전화 0000-0000 고객문의 <a href="mailto:chlghkqls123@naver.com">chlghkqls123@naver.com</a></p>
+          <p>주소서울특별시 강남구 역삼동 000-00 전화 0000-0000 고객문의 <a href="mailto:duqwlqdk@naver.com">duqwlqdk@naver.com</a></p>
         </div>
 
         <address>Copyright&copy; 2025 react project RE?GO! allright reserved.</address>
