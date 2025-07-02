@@ -1,0 +1,32 @@
+{
+  "sneakers":[
+{"id":1, "img":"1_shoes_left.png"},
+{"id":2, "img":"sneakers1.png", "title":"호카 오네오네 텍톤 2", "price":"20000","likes": "26"},
+{"id":3, "img":"sneakers2.png", "title":"[Vans] 반스 볼트 X 꼼데가르송 X 포켓몬 올드스쿨", "price":"18000", "likes": "26"},
+{"id":4, "img":"sneakers3.png", "title":"프라다 로퍼", "price":"233000", "likes": "134"},
+{"id":5, "img":"sneakers4.png", "title":"리복 프리미어 런닝 운동화 FV7986 235", "price":"38000", "likes": "71"},
+{"id":6, "img":"sneakers5.png", "title":"나이키 코르테즈 운동화 270", "price":"8000", "likes": "96"},
+{"id":7, "img":"sneakers6.png", "title":"아크테릭스 KONSEAL LT 외구 경량의 운동화 통기성 런슈즈 범고래", "price":"183000", "likes": "32"}
+],
+
+"boots":[
+{"id":1, "img":"2_shoes_left.png"},
+{"id":2, "img":"boots1.png", "title":"레드윙 라인맨 8D", "price":"150000", "likes": "206"},
+{"id":3, "img":"boots2.png", "title":"미소페 뒷밴딩 니하이 롱부츠 240 (새상품)", "price":"50000", "likes": "211"},
+{"id":4, "img":"boots3.png", "title":"샤넬 러버 부츠(레인부츠)37 새제품", "price":"350000", "likes": "226"},
+{"id":5, "img":"boots4.png", "title":"크롬하츠 어그 부츠", "price":"320000", "likes": "74"},
+{"id":6, "img":"boots5.png", "title":"알든 4011hc 인디부츠 스너프 ", "price":"180000", "likes": "8"},
+{"id":7, "img":"boots6.png", "title":"오토바이 부츠 신발 270 ", "price":"18000", "likes": "12"}
+],
+
+"sandals":[
+{"id":1, "img":"3_shoes_left.png"},
+{"id":2, "img":"sandals1.png", "title":"호카 오네오네 텍톤 2", "price":"20000", "likes": "75"},
+{"id":3, "img":"sandals2.png", "title":"[Vans] 반스 볼트 X 꼼데가르송 X 포켓몬 올드스쿨", "price":"18000", "likes": "254"},
+{"id":4, "img":"sandals3.png", "title":"프라다 로퍼", "price":"233000", "likes": "26"},
+{"id":5, "img":"sandals4.png", "title":"리복 프리미어 런닝 운동화 FV7986 235", "price":"38000", "likes": "126"},
+{"id":6, "img":"sandals5.png", "title":"나이키 코르테즈 운동화 270", "price":"8000", "likes": "265"},
+{"id":7, "img":"sandals6.png", "title":"아크테릭스 KONSEAL LT 외구 경량의 운동화 통기성 런슈즈 범고래", "price":"183000", "likes": "56"}
+]
+}
+

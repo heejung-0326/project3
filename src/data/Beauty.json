@@ -1,0 +1,30 @@
+{
+  "perfume": [
+    { "id": 1, "img": "1_beauty_left.png" },
+    { "id": 2, "img": "perfume1.png", "title": "질스튜어트 뷰티 향수 롤온 스트로베리 앤 티", "price": "10000", "likes": "26" },
+    { "id": 3, "img": "perfume2.png", "title": "루이비통 아트라프 레브 100ml 여자향수 국문택", "price": "400000", "likes": "34" },
+    { "id": 4, "img": "perfume3.png", "title": "쉬어 - 반짝거리는 크리스마스 향수", "price": "21000", "likes": "226" },
+    { "id": 5, "img": "perfume4.png", "title": "주올로지스트 향수 샘플 1.5ml", "price": "17160", "likes": "98" },
+    { "id": 6, "img": "perfume5.png", "title": "앤 블러쉬 스웨이드 코롱 50ml", "price": "162000", "likes": "344" },
+    { "id": 7, "img": "perfume6.png", "title": "겐조조약돌향수", "price": "55000", "likes": "122" }
+  ],
+  "skincare": [
+    { "id": 1, "img": "2_beauty_left.png" },
+    { "id": 2, "img": "skincare1.png", "title": "쇼핑백포함) 남성2종 스킨로션 세트", "price": "14800", "likes": "56" },
+    { "id": 3, "img": "skincare2.png", "title": "넘버즈인 스킨케어 세트", "price": "35000", "likes": "98" },
+    { "id": 4, "img": "skincare3.png", "title": "헤라 리플렉션 스킨 글로우 쿠션 파운데이션 리필", "price": "20900", "likes": "74" },
+    { "id": 5, "img": "skincare4.png", "title": "숨 스킨스테이 소프트글로우 쿠션 01호", "price": "19000", "likes": "174" },
+    { "id": 6, "img": "skincare5.png", "title": "(미개봉) 라네즈 크림스킨세트 (본품170ml+리필130ml 세트)", "price": "20000", "likes": "540" },
+    { "id": 7, "img": "skincare6.png", "title": "연작 스킨 퍼펙팅 프로텍티브 베이스 프렙", "price": "28000", "likes": "341" }
+  ],
+  "haircare": [
+    { "id": 1, "img": "3_beauty_left.png" },
+    { "id": 2, "img": "haircare1.png", "title": "새상품) 폴리쉬 헤어오일 80ml", "price": "9000", "likes": "563" },
+    { "id": 3, "img": "haircare2.png", "title": "[샤넬]블루 드 샤넬 헤어 퍼퓸", "price": "80000", "likes": "262" },
+    { "id": 4, "img": "haircare3.png", "title": "달리프헤어픽서(일괄)", "price": "15500", "likes": "123" },
+    { "id": 5, "img": "haircare4.png", "title": "아도르 퍼퓸 헤어 오일 히노끼", "price": "20000", "likes": "165" },
+    { "id": 6, "img": "haircare5.png", "title": "러쉬 수퍼밀크 컨디셔닝 헤어 프라이머", "price": "37000", "likes": "221" },
+    { "id": 7, "img": "haircare6.png", "title": "러쉬 프로텍팅 헤어 세럼 쉴드", "price": "28000", "likes": "147" }
+  ]
+}
+

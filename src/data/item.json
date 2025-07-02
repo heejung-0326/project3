@@ -1,0 +1,18 @@
+{
+  "item":[
+    {"id":1, "img":"top1.png", "title":"스투시 반팔", "cate":"clothing","price":"20000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609},
+    {"id":2, "img":"top2.png", "title":"여성 하늘하늘한 원피스", "cate":"clothing","price":"3300","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609},
+    {"id":3, "img":"top3.png", "title":"여성 가디건(노랑)", "cate":"clothing","price":"18000","status": "상","desc":"직거래 희망, 배송도 가능직거래 희망, 배송도 가능직거래 희망, 배송도 가능직거래 희망, 배송도 가능","delivery":"선불","date":20250609},
+    {"id":4, "img":"top4.png", "title":"오픈 숄더 슬리브", "cate":"clothing","price":"20000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609},
+    {"id":5, "img":"top5.png", "title":"검정 반팔티", "cate":"clothing","price":"380000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609},
+    {"id":6, "img":"top6.png", "title":"검정 맨투맨", "cate":"clothing","price":"200000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609}
+  ],
+    "complete":[
+    {"id":1, "img":"complete1.png", "title":"스투시 밀리터리 롱슬리브", "cate":"clothing","price":"120000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"구매"},
+    {"id":2, "img":"complete2.png", "title":"스투시 베이직 흰색 반팔티", "cate":"clothing","price":"33000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"판매"},
+    {"id":3, "img":"complete3.png", "title":"Twins 바람막이 자켓", "cate":"clothing","price":"220000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"구매"},
+    {"id":4, "img":"outer6.png", "title":"한섬SJSJ가디건", "cate":"outer","price":"100000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"구매"},
+    {"id":5, "img":"selling1.png", "title":"DEUS 링거 반팔티", "cate":"clothing","price":"380000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"구매"},
+    {"id":6, "img":"selling2.png", "title":"스투시 그레이 후드티", "cate":"clothing","price":"220000","status": "상","desc":"직거래 희망, 배송도 가능","delivery":"선불","date":20250609,"sellbuy":"판매"}
+  ]
+}

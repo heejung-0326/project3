@@ -1,0 +1,167 @@
+.login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-box .logo-img {
+  margin-bottom: 40px;
+  width: 200px;
+  height: auto;
+}
+.login-box .input-group {
+  position: relative;
+  margin: 30px 0;
+  text-align: left;
+}
+.login-box .input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  outline: none;
+}
+.login-box .input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #666;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.login-box .input-group input:focus + label,
+.login-box .input-group input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #22304E;
+}
+.login-box .id-save {
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.login-box .id-save input {
+  margin-right: 5px;
+}
+.login-box button[type=submit] {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #22304E;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.login-box .links {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.login-box .links a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.login-box .links span {
+  color: #aaa;
+}
+.login-box .social-login button {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.login-box .social-login button img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .login-wrapper {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+  .login-box {
+    transform: translateY(-60px);
+  }
+}
+@media (max-width: 767px) {
+  .login-wrapper {
+    height: 100%;
+    padding: 50px 0px 100px 0px;
+  }
+  .login-box {
+    max-width: 70%;
+    padding: 0 10px;
+  }
+  .login-box .back {
+    transform: translate(-161px, 22px);
+    font-size: 24px;
+  }
+  .login-box .logo-img {
+    width: 180px;
+    height: auto;
+    transform: translateY(-10px);
+  }
+  .login-box .input-group {
+    margin: 20px 0;
+  }
+  .login-box .input-group input {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  .login-box .input-group label {
+    font-size: 14px;
+  }
+  .login-box .id-save {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .login-box .id-save input {
+    margin-right: 5px;
+  }
+  .login-box button[type=submit] {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .login-box .links {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .login-box .links a {
+    margin: 0 4px;
+  }
+  .login-box .social-login button {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  .login-box .social-login button img {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+  }
+}/*# sourceMappingURL=login.css.map */

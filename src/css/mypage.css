@@ -1,0 +1,430 @@
+@charset "UTF-8";
+:root {
+  /* 컬러 */
+  --txt-color:#222;
+  --white-color:#fff;
+  --main-color1:#FF6B35;
+  --main-color2:#22304E;
+  --tag-bg:#F3F4F5;
+  /* 텍스트 */
+  --txt-pc:16px;
+  --txt-tablet:0.875rem;
+  --txt-mobile:0.75rem;
+  --fontsize-24:1.5rem;
+  --fontsize-20:1.25rem;
+  --fontsize-16:1rem;
+  --fontsize-14:0.875rem;
+  --fontsize-12:0.75rem;
+  /* 박스 그림자 */
+  --shadow1:2px 1px 2px 0px rgba(0, 0, 0, 0.32);
+}
+
+.nonelabel {
+  display: none;
+}
+
+.product > input[type=checkbox] {
+  margin-right: 116px;
+  width: 20px;
+}
+
+.mypage {
+  width: 100%;
+  margin: 50px 0px;
+}
+.mypage h2 {
+  font-size: var(--fontsize-24);
+  text-align: center;
+  margin: 50px 0px;
+}
+.mypage .mypage_btn {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.mypage .mypage_btn button {
+  cursor: pointer;
+  font-size: var(--fontsize-20);
+  border: none;
+  border-bottom: 3px solid var(--tag-bg);
+  background: none;
+  padding: 20px 140px;
+  transition: 0.3s;
+}
+.mypage .mypage_btn button.clickcolorchange {
+  border-bottom: 3px solid var(--main-color2);
+}
+.mypage .selling {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.mypage .selling .delete_box {
+  background: var(--tag-bg);
+  padding: 10px 0px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fontsize-14);
+}
+.mypage .selling .delete_box .delete_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.mypage .selling .product {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+}
+.mypage .selling .product .product_img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-right: 24px;
+  background: #f8f8f8;
+}
+.mypage .selling .product .product_txt {
+  flex: 1;
+}
+.mypage .selling .product .product_txt p {
+  line-height: 20px;
+  margin: 4px 0;
+  font-size: 16px;
+  color: #222;
+}
+.mypage .selling .product .product_txt p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-color2);
+}
+.mypage .selling .product button {
+  background: none;
+  border: none;
+}
+.mypage .selling_btn {
+  background: var(--main-color2);
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.mypage .selling_btn a {
+  color: var(--white-color);
+}
+.mypage .selling_btn a div {
+  padding: 8px 15px;
+}
+
+.buying {
+  width: 1200px;
+  margin: 0 auto;
+}
+.buying .delete_box {
+  background: var(--tag-bg);
+  padding: 10px 0px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fontsize-14);
+}
+.buying .delete_box .delete_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.buying .product {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+}
+.buying .product .product_img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-right: 24px;
+  background: #f8f8f8;
+}
+.buying .product .product_txt {
+  flex: 1;
+}
+.buying .product .product_txt p {
+  line-height: 20px;
+  margin: 4px 0;
+  font-size: 16px;
+  color: #222;
+}
+.buying .product .product_txt p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-color2);
+}
+
+.complete {
+  width: 1200px;
+  margin: 0 auto;
+}
+.complete .delete_box {
+  background: var(--tag-bg);
+  padding: 10px 0px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fontsize-14);
+}
+.complete .delete_box .delete_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.complete .product {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+}
+.complete .product .product_img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-right: 24px;
+  background: #f8f8f8;
+}
+.complete .product .product_txt {
+  flex: 1;
+}
+.complete .product .product_txt p {
+  line-height: 20px;
+  margin: 4px 0;
+  font-size: 16px;
+  color: #222;
+}
+.complete .product .product_txt p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-color2);
+}
+.complete .product .product_txt .product_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+  display: block;
+}
+.complete .product .product_txt p:last-child {
+  text-align: right;
+  font-weight: bold;
+  color: var(--main-color2);
+}
+
+.pagination {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 10px;
+}
+.pagination button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background: var(--tag-bg);
+  font-size: var(--fontsize-20);
+  transition: 0.3s;
+  border: 1px solid #a8a8a8;
+}
+.pagination button:hover {
+  background: var(--main-color1);
+  color: var(--white-color);
+  border: none;
+}
+.pagination button:first-child, .pagination button:last-child {
+  background: none;
+  border: none;
+  color: var(--txt-color);
+}
+.pagination button:first-child:hover, .pagination button:last-child:hover {
+  color: var(--main-color1);
+}
+.pagination button.pagecolor {
+  background: var(--main-color2);
+  color: var(--white-color);
+  border: none;
+}
+
+input[type=checkbox] {
+  accent-color: var(--tag-bg);
+}
+input[type=checkbox]:checked {
+  accent-color: var(--main-color2);
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nonelabel {
+    display: none;
+  }
+  .product > input[type=checkbox] {
+    margin-right: 116px;
+    width: 20px;
+  }
+  .mypage {
+    width: 100%;
+  }
+  .mypage h2 {
+    font-size: var(--fontsize-24);
+  }
+  .mypage .mypage_btn {
+    width: 100%;
+  }
+  .mypage .mypage_btn button {
+    padding: 10px 100px;
+  }
+  .mypage .selling {
+    width: 100%;
+  }
+  .mypage .buying {
+    width: 100%;
+  }
+  .mypage .complete {
+    width: 100%;
+  }
+  .mypage .pagination {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .product > input[type=checkbox] {
+    margin-right: 10px;
+    width: 20px;
+  }
+  .mypage {
+    width: 95%;
+    margin: 0px auto 0px auto;
+  }
+  .mypage h2 {
+    font-size: var(--fontsize-24);
+  }
+  .mypage .mypage_btn {
+    width: 92%;
+  }
+  .mypage .mypage_btn button {
+    font-size: var(--fontsize-20);
+    padding: 10px 30px;
+  }
+  .mypage .selling {
+    width: 100%;
+  }
+  .mypage .selling .delete_box {
+    font-size: var(--fontsize-14);
+  }
+  .mypage .selling .product {
+    padding: 3px;
+  }
+  .mypage .selling .product .edit_btn a {
+    color: #0051ff;
+  }
+  .mypage .selling .product .product_img {
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .mypage .selling .product .product_txt p {
+    font-size: var(--fontsize-14);
+  }
+  .mypage .selling .product .product_txt p span {
+    font-weight: bold;
+    color: var(--main-color2);
+    padding-right: 5px;
+  }
+  .mypage .selling .product .product_txt p :last-child {
+    font-size: var(--fontsize-12);
+  }
+  .mypage .selling .selling_btn {
+    position: fixed;
+    bottom: 135px;
+    right: 8px;
+    z-index: 10000;
+    background: var(--main-color2);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 10px;
+  }
+  .mypage .selling .selling_btn a {
+    color: var(--white-color);
+  }
+  .buying {
+    width: 100%;
+  }
+  .buying .delete_box {
+    font-size: var(--fontsize-14);
+  }
+  .buying .product {
+    padding: 3px;
+  }
+  .buying .product .product_img {
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .buying .product .product_txt p {
+    font-size: var(--fontsize-14);
+  }
+  .buying .product .product_txt p span {
+    font-weight: bold;
+    color: var(--main-color2);
+    padding-right: 5px;
+  }
+  .complete {
+    width: 100%;
+  }
+  .complete .product {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 3px;
+    background: #fff;
+  }
+  .complete .product .product_img {
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+    margin-right: 24px;
+    margin-top: 30px;
+    background: #f8f8f8;
+  }
+  .complete .product .product_txt p {
+    font-size: var(--fontsize-14);
+  }
+  .complete .product .product_txt p span {
+    color: var(--main-color2);
+    padding-right: 5px;
+    font-weight: bold;
+  }
+  .pagination {
+    width: 100%;
+  }
+}/*# sourceMappingURL=mypage.css.map */
