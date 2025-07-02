@@ -14,7 +14,7 @@ function Edit() {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:9070/mypage/item/${id}`)
+    axios.get(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/mypage/item/${id}`)
       .then(res => {
         const data = res.data;
         setForm({
@@ -54,7 +54,7 @@ function Edit() {
       // 이미지가 File 객체이면 name, 문자열이면 그대로
       const first = form.img[0];
       const imgValue = first instanceof File ? first.name : first || '';
-      await axios.post(`http://localhost:9070/mypage/${id}`, { ...form, img: imgValue });
+      await axios.post(`https://port-0-backend-mbeeoks1e1ce5c07.sel4.cloudtype.app/mypage/${id}`, { ...form, img: imgValue });
       alert('수정이 완료되었습니다.');
       navigate('/mypage');
     } catch (err) {
